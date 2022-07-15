@@ -24,7 +24,7 @@
 }
 
 .user, .pass{
-  text-align: center;
+  text-align: left;
   justify-self: center;
   margin: 7% 7%;
 }
