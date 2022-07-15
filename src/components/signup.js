@@ -17,24 +17,24 @@ const Signup = () => {
             setPass(value)
     }
 
-    function handleSubmit(e) {
-        e.preventDefault();
-        if(pass.length === 0){
-            setError("Password field required");
-        }
-        else{
-            validatePassword(pass);
-        }
-    }
+    // function handleSubmit(e) {
+    //     e.preventDefault();
+    //     if(pass.length === 0){
+    //         setError("Password field required");
+    //     }
+    //     else{
+    //         validatePassword(pass);
+    //     }
+    // }
 
-    function validatePassword(value) {
+    // function validatePassword(value) {
         
-        const symbl = /^(?=.*[0-9])(?=.*[!@#$%^&*])[a-zA-Z0-9!@#$%^&*]{3,15}$/;
-        if (symbl.test(value) === false)
-            return [true, "Password must contain minimum 4 letters and one special character"]
-        else
-            return [false, ""]
-    }
+    //     const symbl = /^(?=.*[0-9])(?=.*[!@#$%^&*])[a-zA-Z0-9!@#$%^&*]{3,15}$/;
+    //     if (symbl.test(value) === false)
+    //         return [true, "Password must contain minimum 4 letters and one special character"]
+    //     else
+    //         return [false, ""]
+    // }
 
 
     return ( 
@@ -62,7 +62,7 @@ const Signup = () => {
                         <div>{error}</div>
       
                     <Link to="/home"><button className = "btn btn-lg btn-success"
-                    onClick={handleSubmit}>Sign up</button></Link>
+                    >Sign up</button></Link>
       
                 </div>
             </div>
