@@ -7,14 +7,21 @@ const Signup = () => {
     const [pass, setPass] = useState('');
     const [error, setError] = useState('');
 
-    function handleChange(event) {
-        setError("");
-        let reValue = event.target.name;
-        let value = event.target.value;
-        if (reValue === "user")
-            setUser(value)
-        else if (reValue === "pass")
-            setPass(value)
+    function handleChangeUsername(event) {
+       setUser(event.target.value)
+    }
+
+    function handleChangePassword(event) {
+        setPass(event.target.value)
+     }
+
+    function handleSubmit(event) {
+        if(user === 'User' && pass === 'Pass') {
+            setError('No error')
+        }
+        else {
+            setError('Invalid credentials')
+        }
     }
 
     // function handleSubmit(e) {
@@ -50,8 +57,10 @@ const Signup = () => {
                         value={user}
                         onChange = {handleChange}
                         className = "user"/>
-                        </div>
-                        <div><label>Password: </label>
+
+</div>
+
+<div><label>Password: </label>
                         <input type = "password"
                         required
                         name = "pass"
