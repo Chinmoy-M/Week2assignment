@@ -15,7 +15,7 @@ const Login = () => {
       <input type = "text" placeholder = "password" className = "pass"/>
       </div>
       
-      <Link to="/home"><button className = "btn btn-lg btn-success">Login</button></Link>
+      <Link to="/home"><button className = "btn btn-lg btn-success">Loginaryan </button></Link>
       
     </div>
     </div>
