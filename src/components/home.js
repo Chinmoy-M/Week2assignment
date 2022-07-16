@@ -10,7 +10,7 @@ const Home = () => {
         Welcome to UDB!
         </div>
 
-        <pre style="background-image: url('IMG_20220715_011538.jpg'); background-repeat: no-repeat; background-position: 800px;">
+        <pre>
 
 
         UDB Solutions is a promising startup looking to change the scenario of healthcare
@@ -41,7 +41,7 @@ const Home = () => {
           <div className="row">
             <div className="col">
               {/* <!-- ........card 1 starts.... --> */}
-              <div className="card" style="width: 18rem;">
+              <div className="card" >
                 <img src="download (1).png" className="card-img-top" alt="..."/>
                 <div className="card-body">
                   <h5 className="card-title"> UI / UX Designer </h5>
@@ -54,7 +54,7 @@ const Home = () => {
             </div>
             <div className="col">
               {/* <!-- ............Card 2 Starts............. --> */}
-              <div className="card" style="width: 18rem;">
+              <div className="card" >
                 <img src="anddddd.png" className="card-img-top" alt="..."/>
                 <div className="card-body">
                   <h5 className="card-title">Android Developer</h5>
@@ -67,7 +67,7 @@ const Home = () => {
             </div>
             <div className="col">
               {/* <!-- ...............Card 3 Starts...................... --> */}
-              <div className="card" style="width: 18rem;">
+              <div className="card" >
                 <img src="web developper.png" className="card-img-top" alt="..."/>
                 <div className="card-body">
                   <h5 className="card-title">. Web Developer</h5>
