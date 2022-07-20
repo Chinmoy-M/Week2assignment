@@ -15,6 +15,7 @@ const Login = () => {
       <input type = "text" placeholder = "password" className = "pass"/>
       </div>
       
+      <Link to = "/"><button className='btn btn-outline-warning btn-lg m-4'>Go back</button></Link>
       <Link to="/home"><button className = "btn btn-lg btn-success">Log </button></Link>
       
     </div>

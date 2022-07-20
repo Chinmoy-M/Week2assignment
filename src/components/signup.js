@@ -5,7 +5,6 @@ import {Link} from 'react-router-dom';
 const Signup = () => {
     const [user, setUser] = useState('');
     const [pass, setPass] = useState('');
-    const [error, setError] = useState('');
 
 
 
@@ -15,17 +14,23 @@ const Signup = () => {
 
     function handleChangePassword(event) {
         setPass(event.target.value)
+
      }
 
-    function handleSubmit(event) {
-        if(user === 'User' && pass === 'Pass') {
-            setError('No error')
-        }
-        else {
-            setError('Invalid credentials')
-        }
+    // function handleSubmit(event) {
+        
+        
+    //     <Link to ="\home"></Link>
+       
 
-    }
+    // }
+
+    // if(user === 'User' && pass === 'Pass') {
+        //     setError('No error')
+        // }
+        // else {
+        //     setError('Invalid credentials')
+        // }
 
     // function handleSubmit(e) {
     //     e.preventDefault();
@@ -50,33 +55,37 @@ const Signup = () => {
     return ( 
         <div className="main">
             <div className = "sub-main">
-    
+                <form action = "/home">
                 <div className = "container-fluid">
-                    <h1>Sign Up by Chinmoy</h1>
-                        <div><label>User name: </label>
+                    <h1 className='mb-5'>Sign Up</h1>
+                        <div className = "mb-4"><label className='field' htmlFor='u'>User name: </label>
                         <input type = "text"
-                        required
                         name = "user" 
                         value={user}
+                        className = "user"
+                        id = "u"
                         onChange = {handleChangeUsername}
-                        className = "user"/>
+                        required/>
 
-                </div>
+                        </div>
 
-                <div><label>Password: </label>
+                        <div className = "mb-4"><label className='field' htmlFor='p'>Password: </label>
                         <input type = "password"
                         required
                         name = "pass"
                         value = {pass}
                         onChange = {handleChangePassword}
-                        className = "pass"/>
+                        minLength = "4"
+                        pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{4,}"
+                        title="Must contain at least one  number and one uppercase and lowercase letter, and at least 4 or more characters"
+                        className = "pass"
+                        id = "p"/>
                         </div>
-                        <div>{error}</div>
-      
-                        <Link to="/home"><button className = "btn btn-lg btn-success"
-                    >Sign up</button></Link>
+                        <Link to = "/"><button className='btn btn-outline-warning btn-lg m-4'>Go back</button></Link>
+                        <button className = "btn btn-lg btn-success" >Sign up</button>
       
                 </div>
+                </form>
             </div>
         </div>
      );
