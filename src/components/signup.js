@@ -52,7 +52,7 @@ const Signup = () => {
             <div className = "sub-main">
     
                 <div className = "container-fluid">
-                    <h1>Sign Up</h1>
+                    <h1>Sign Up by Chinmoy</h1>
                         <div><label>User name: </label>
                         <input type = "text"
                         required
