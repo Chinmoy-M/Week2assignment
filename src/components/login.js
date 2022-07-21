@@ -1,5 +1,5 @@
 import {Link} from 'react-router-dom';
-
+import { useState } from 'react';
 
 // function handleSubmit(event) {
         
@@ -27,18 +27,46 @@ import {Link} from 'react-router-dom';
     // }
 
 const Login = () => {
+  const [user, setUser] = useState('');
+    const [pass, setPass] = useState('');
+
+
+
+    function handleChangeUsername(event) {
+       setUser(event.target.value)
+    }
+
+    function handleChangePassword(event) {
+        setPass(event.target.value)
+
+     }
+
   return ( 
     <div className="main">
     <div className = "sub-main">
     
     <div className = "container-fluid">
       <h1>Log in</h1>
-      <div>
-      <input type = "text" placeholder = "user name" className = "user"/>
+      <div><label htmlFor = "u">User name:</label>
+      <input type = "text" 
+      name = "user"
+      value = {user}
+      className = "user" 
+      id = "u"
+      required
+      onChange = {handleChangeUsername} />
       </div>
       <div>
 
-      <input type = "password" placeholder = "password" className = "pass"/>
+      <label htmlFor = "p">Password: </label>
+      <input type = "password"
+      name = "pass"
+      value = {pass}
+      placeholder = "password" 
+      className = "pass" 
+      id = "p" 
+      onChange = {handleChangePassword}
+      required/>
       </div>
       
       <Link to = "/"><button className='btn btn-outline-warning btn-lg m-4'>Go back</button></Link>
