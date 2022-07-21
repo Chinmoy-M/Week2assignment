@@ -32,13 +32,13 @@ const Login = () => {
     <div className = "sub-main">
     
     <div className = "container-fluid">
-      <h1>Login</h1>
+      <h1>Log in</h1>
       <div>
       <input type = "text" placeholder = "user name" className = "user"/>
       </div>
       <div>
 
-      <input type = "text" placeholder = "password" className = "pass"/>
+      <input type = "password" placeholder = "password" className = "pass"/>
       </div>
       
       <Link to = "/"><button className='btn btn-outline-warning btn-lg m-4'>Go back</button></Link>
