@@ -1,5 +1,31 @@
 import {Link} from 'react-router-dom';
 
+
+// function handleSubmit(event) {
+        
+        
+    //     <Link to ="\home"></Link>
+       
+
+    // }
+
+    // if(user === 'User' && pass === 'Pass') {
+        //     setError('No error')
+        // }
+        // else {
+        //     setError('Invalid credentials')
+        // }
+
+    // function handleSubmit(e) {
+    //     e.preventDefault();
+    //     if(pass.length === 0){
+    //         setError("Password field required");
+    //     }
+    //     else{
+    //         validatePassword(pass);
+    //     }
+    // }
+
 const Login = () => {
   return ( 
     <div className="main">
