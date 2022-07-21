@@ -17,17 +17,6 @@ const Signup = () => {
 
      }
 
-    
-
-    // function validatePassword(value) {
-        
-    //     const symbl = /^(?=.*[0-9])(?=.*[!@#$%^&*])[a-zA-Z0-9!@#$%^&*]{3,15}$/;
-    //     if (symbl.test(value) === false)
-    //         return [true, "Password must contain minimum 4 letters and one special character"]
-    //     else
-    //         return [false, ""]
-    // }
-
 
     return ( 
         <div className="main">
