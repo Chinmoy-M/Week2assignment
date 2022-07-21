@@ -12,8 +12,6 @@ function App() {
   
   return (
     <Router>
-    <div className="App">
-      <div className="content">
         <Switch>
           <Route exact path = "/">
             <First/>
@@ -29,8 +27,6 @@ function App() {
           </Route>
           <Redirect to = "/" />
         </Switch>
-      </div>
-    </div>
     </Router>
   );
 }
