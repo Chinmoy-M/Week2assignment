@@ -42,7 +42,7 @@ const Home = () => {
       <div className="col">
         {/* <!-- ........card 1 starts.... --> */}
         <div className="card" >
-          <img src="download(1).png" className="card-img-top" alt="Image loading error"/>
+          <img src="ui.png" className="card-img-top" alt="Image loading error"/>
           <div className="card-body">
             <h5 className="card-title"> UI / UX Designer </h5>
             <p className="card-text">UI/UX Designer would be responsible for creating the wireframes for an application
