@@ -42,7 +42,7 @@ const Home = () => {
       <div className="col">
         {/* <!-- ........card 1 starts.... --> */}
         <div className="card" >
-          <img src="ui.png" className="card-img-top" alt="Image loading error"/>
+          <img src={require("./ui.png")} className="card-img-top" alt="Image loading error"/>
           <div className="card-body">
             <h5 className="card-title"> UI / UX Designer </h5>
             <p className="card-text">UI/UX Designer would be responsible for creating the wireframes for an application
@@ -55,7 +55,7 @@ const Home = () => {
       <div className="col">
         {/* <!-- ............Card 2 Starts............. --> */}
         <div className="card" >
-          <img src="anddddd.png" className="card-img-top" alt="Image loading error"/>
+          <img src= {require("./anddddd.png")} className="card-img-top" alt="Image loading error"/>
           <div className="card-body">
             <h5 className="card-title">Android Developer</h5>
             <p className="card-text">Android Developer is responsible for the following tasks: Translating UI Mockups to Android XML templates. Building responsive
@@ -68,7 +68,7 @@ const Home = () => {
       <div className="col">
         {/* <!-- ...............Card 3 Starts...................... --> */}
         <div className="card" >
-          <img src="web developper.png" className="card-img-top" alt="Image loading eror"/>
+          <img src={require("./web developper.png")} className="card-img-top" alt="Image loading eror"/>
           <div className="card-body">
             <h5 className="card-title">. Web Developer</h5>
             <p className="card-text">Web Developer is responsible for the following tasks:
